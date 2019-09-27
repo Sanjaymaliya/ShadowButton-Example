@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.android.sbm.ShadowButton
+        android:id="@+id/Button1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        android:text="Default Button"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.android.sbm.ShadowButton
+        android:id="@+id/Button2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        app:buttonColor="@color/colorLightPink"
+        app:shadowColor="@color/shadow_color"
+        app:cornerRadius="0dp"
+        app:onUpShadowSize="10dp"
+        app:pressedShadowSize="10dp"
+        android:text="Rectangle  Button"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button1" />
+
+    <com.android.sbm.ShadowButton
+        android:id="@+id/Button3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        app:buttonColor="@color/bg_color"
+        app:shadowColor="@color/shadowcolor"
+        app:cornerRadius="30dp"
+        app:onUpShadowSize="10dp"
+        app:pressedShadowSize="10dp"
+        android:text="Round Circle  Button"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
